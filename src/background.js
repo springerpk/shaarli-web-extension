@@ -27,7 +27,7 @@ function shareCurrentTab(tab) {
       browser.runtime.openOptionsPage();
       return;
     }
-    const shareUrl = `${storage.url}?post=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&source=bookmarklet`;
+    const shareUrl = `${storage.url}?post=${encodeURIComponent(url)}`;
     openInPopup(shareUrl, storage.popupWidth, storage.popupHeight);
   });
 }
